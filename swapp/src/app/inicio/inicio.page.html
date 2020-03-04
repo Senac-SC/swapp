@@ -3,13 +3,24 @@
       <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-img src="swapplogoTRANSPA.png"></ion-img>
+
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <img class="logo" src="../assets/img/swapplogo.png">
+          </ion-col>
+        </ion-row>
+        
   </ion-toolbar>
 </ion-header>
 
 <ion-content color="primary">
+  <ion-row>
+  <ion-col size="8">
   <ion-searchbar animated color="light" placeholder="Pesquisar..."></ion-searchbar>
-  <br>
-  <p color="light">Recomendados</p>
-
+  </ion-col>
+  <ion-col size="4">
+    <ion-button color="secondary">ANUNCIAR</ion-button>
+</ion-col>
+</ion-row>                  
+<h4 class="recomendados" color="light">Recomendados</h4>
 </ion-content>
