@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'listagem',
     loadChildren: () => import('./listagem/listagem.module').then( m => m.ListagemPageModule)
+  },  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   }
+
 
 ];
 
