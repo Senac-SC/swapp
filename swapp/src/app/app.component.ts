@@ -17,19 +17,19 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'Chat',
+      url: '/chat',
+      icon: 'chatbubbles'
     },
     {
-      title: 'Listagem',
+      title: 'Produtos',
       url: '/listagem',
-      icon: 'list'
+      icon: 'cart'
     },
     {
       title: 'Perfil',
       url: '/perfil',
-      icon: 'list'
+      icon: 'person'
     }
   ];
 
