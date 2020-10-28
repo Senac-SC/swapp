@@ -35,6 +35,11 @@ export class AppComponent {
       title: 'Login',
       url: '/login',
       icon: 'heart'
+    },
+    {
+      title: 'Inicio',
+      url: '/inicio',
+      icon: 'trash'
     }
   ];
 
