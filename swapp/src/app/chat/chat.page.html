@@ -1,9 +1,36 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>chat</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app> 
 
-<ion-content>
-
+  <ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+          <ion-menu-button><ion-icon name="arrow-round-back" color="light"></ion-icon></ion-menu-button>
+      </ion-buttons>
+      <ion-title color="light">Rafael Monteiro</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <h4 class="txt">  Eae Rafael, me chamo Tiago.<br> Fiquei interessado naquele teu violão.</h4>
+   <ion-avatar>
+   <img class="emo" src="../../assets/img/emo.jpg">
+  
+  </ion-avatar> 
+  <h4 class="txte"> Oi Tiago, Eu estou trocando ele por <br> uma gaita de fole importada<br> diretamente da Escócia.</h4>
+  <h4 class="txt">  Por uma incrível coincidência eu <br> tenho uma aqui em casa que eu não <br> uso mais e está em um bom estado.<br> Ficarei feliz em fazer essa troca.</h4>
+  <ion-avatar>
+  <img class="emo" src="../../assets/img/emo.jpg">
+ </ion-avatar> 
+ <ion-icon class="dot" name="ellipsis-horizontal" ></ion-icon>
+ <ion-icon class="dot1" name="ellipsis-horizontal" ></ion-icon>
+ <ion-icon class="dot2" name="ellipsis-horizontal" ></ion-icon>
 </ion-content>
+    
+
+ <ion-footer>
+  <ion-item>
+      <ion-input class="mensagem" expand="block" placeholder="   Digite uma mensagem" horizontal="start" ></ion-input>
+       <div class="icon-button"> <ion-fab-button horizontal="end"> <ion-icon name="attach"></ion-icon></ion-fab-button></div>
+      <div class="icon-button"><ion-fab-button horizontal="end" > <ion-icon name="send" ></ion-icon></ion-fab-button></div>
+    </ion-item>
+    
+  
+</ion-footer>
