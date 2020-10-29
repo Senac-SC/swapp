@@ -1,0 +1,50 @@
+.logo {
+    width: 27.5%;
+    margin: 0 27% 3%;
+    display: block;
+}
+
+ion-searchbar {
+    border-radius: 15%;
+}
+
+.anunciar {
+    margin-top: 10%;
+    width: 90%;
+    font-size: 13px;
+}
+
+.titulo {
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+ion-row {
+    padding-top: 10px;
+}
+
+hr {
+    background-color: white;
+    height: 2px;
+    border-radius: 20%;
+    margin: 25px 20px 0 0;
+}
+
+.anuncioimg {
+    border: 2px solid white;
+    width: 200px;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+}
+
+h6 {
+    color: black;
+    border: 2px solid white; 
+    text-align: center;
+    font-size: 13px;
+    background-color: #e2e4e8;
+    margin-top: -4px;
+    padding-top: 13px;
+    height: 80px;
+}
