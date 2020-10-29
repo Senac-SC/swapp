@@ -14,27 +14,22 @@ export class AppComponent {
     {
       title: 'Home',
       url: '/home',
-      icon: 'home'
-    },
-    {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    },
-    {
-      title: 'Listagem',
-      url: '/listagem',
-      icon: 'list'
+      icon: 'heart'
     },
     {
       title: 'Perfil',
       url: '/perfil',
-      icon: 'list'
+      icon: 'person'
     },
     {
-      title: 'Login',
-      url: '/login',
-      icon: 'heart'
+      title: 'Inicio',
+      url: '/inicio',
+      icon: 'grid'
+    },
+    {
+      title: 'Chat',
+      url: '/chat',
+      icon: 'chatbubbles'
     }
   ];
 
