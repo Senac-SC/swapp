@@ -14,10 +14,32 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-  },  {
+  },
+  {
+    path: 'listagem',
+    loadChildren: () => import('./listagem/listagem.module').then( m => m.ListagemPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'chat',
+    loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
     path: 'inicio',
     loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'chat',
+    loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
   }
+
 
 ];
 
