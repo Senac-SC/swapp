@@ -1,27 +1,32 @@
 <ion-header>
-  <ion-toolbar color="secondary">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
+  <ion-toolbar>
+    <ion-title>cadastro</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="primary">
-  <ion-row>
-    <ion-col>
-      <img class="swapplogo" src="../../assets/img/swapplogo.png">
-    </ion-col>
-    </ion-row>
-    <ion-item class="login-item ion-text-center">
-      <ion-input placeholder="Usuário ou e-mail" type="text"></ion-input>
-    </ion-item>
-    <br>
-    <ion-item class="login-item ion-text-center">
-      <ion-input placeholder="Senha" type="password"></ion-input>
-    </ion-item>
-    <br>
-    <div class="center">
-    <ion-button class="login-button" color="secondary" shape="round"><b>Login</b></ion-button>
-    <ion-button class="semconta-button" color="secondary" shape="round"><b>Não tem uma conta? <i>Cadastre-se</i></b></ion-button>
-  </div>
+<ion-content>
+  <form #f="ngForm" (submit)="sendForm(f)">
+
+    <div class="ion-padding">
+      <ion-label position="stacked" color="primary">
+        <ion-icon name="newspaper-outline"></ion-icon>
+        Envie-nos seu feedback, dúvidas ou sugestões:</ion-label>
+      <ion-textarea name="messageField" rows="4" [(ngModel)]="messageField"></ion-textarea>
+    </div>
+
+    <div class="ion-padding">
+      <ion-label position="stacked" color="primary">
+      <ion-icon name="person-outline"></ion-icon>
+      Informação de contato:</ion-label>
+      <ion-input name="contactField" type="text" [(ngModel)]="contactField"></ion-input>
+    </div>
+
+    <div class="ion-padding">
+      <ion-button type="submit" expand="block" name="buttonLogin"> 
+        ENVIAR  
+        <ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+    </div>
+
+  </form>
+
 </ion-content>
