@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/auth';
-import { auth } from 'firebase/app'
+import { NgForm } from '@angular/forms';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -9,20 +9,42 @@ import { auth } from 'firebase/app'
 })
 export class LoginPage implements OnInit {
 
-  username: string=""
-  password: string=""
-  constructor(public afAuth: AngularFireAuth) { }
+  contactField: null;
+  messageField: null;
+
+  constructor(
+    private alertController: AlertController
+  ) { }
 
   ngOnInit() {
   }
 
-  async login(){
-    const { username, password} = this
-    try {
-      const res= await this.afAuth.auth.signInWithEmailAndPassword(username + '@gmail.com', password)
-    } catch(err) {
-      console.dir(err)
-    }
+
+  async sendForm(f: NgForm) {
+
+    const message = 'Contato: ' + this.contactField +
+                    '<br>Mensagem:' + this.messageField;
+
+    const alert = await this.alertController.create({
+      header: 'Alerta!',
+      message,
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: () => {
+            console.log('Canceled');
+          }
+        }, {
+          text: 'Ok',
+          handler: () => {
+            console.log('Alert Confirmed');
+          }
+        }
+      ]
+    });
+    await alert.present();
   }
 
 }
