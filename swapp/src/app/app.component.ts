@@ -30,6 +30,11 @@ export class AppComponent {
       title: 'Chat',
       url: '/chat',
       icon: 'chatbubbles'
+    },
+    {
+      title: 'Cadastro',
+      url: '/cadastro',
+      icon: 'plus'
     }
   ];
 
