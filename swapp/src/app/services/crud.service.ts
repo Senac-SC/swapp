@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 
 
-import { Docinho } from './interfaces/docinho';
+//import { Docinho } from './interfaces/docinho';
 
 
 @Injectable({
@@ -13,7 +13,7 @@ export class CrudService {
 
   constructor(public ngStore: AngularFirestore) { }
 
-
+/*
   getDocinhosList() {
     const docinhoRef = this.ngStore.collection("Docinhos");
     return docinhoRef;
@@ -47,7 +47,7 @@ export class CrudService {
     const docinhoRef: AngularFirestoreDocument<any> = this.ngStore.doc("Docinhos/"+uid);
     return docinhoRef.delete();
   }
-
+*/
 
 }
 
