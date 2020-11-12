@@ -6,22 +6,42 @@ h5{
     font-size: 15px;
 }
 
-.anuncia-item{
-    width: 90%;
-    height: 7%;     
+.anuncia-item{  
     margin: 0 3%;
+   
   }
   .font{
     background-color: #E8E8E8;
-    border-radius: 30px;
+    border-radius: 15px;
+    padding-left: 8px;
+    height: 42px;
   }
   .pub{
     color: #686868;
-    margin-left: 20px;
+    margin-left: 34px;
   }
 
   .linha{
       background-color:#686868;
-      width: 350px;
-  }
- 
+      width: 310px;
+    }
+ .anunciar{
+  width: 60%;
+  height: 7%;     
+  margin: 0 18% 0 ;
+ }
+.bao{
+  width: 130px;
+  height: 110px;
+  
+}
+.icu{
+ width: 50px;
+ height: 50px;
+}
+.desc{
+  background-color:  #E8E8E8;
+  border-radius: 15px;
+  margin: 0 3% 0 ;
+  padding-left: 8px;
+}

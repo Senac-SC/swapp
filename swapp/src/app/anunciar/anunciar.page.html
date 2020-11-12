@@ -7,20 +7,37 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+
+  <ion-content>
+
+    
+
 <div class="titu">
 <h5><b>Adicione uma imagem. <br> (Tamanho recomendado 500X500)</b></h5>
-
-</div>
-<ion-item class="anuncia-item ion-text-center">
-  <ion-input class="font" placeholder="Título" type="text"></ion-input>
+<ion-button class="bao">
+      <ion-icon class="icu" name="camera"></ion-icon>
+    </ion-button>
+</div><br>
+<ion-item class="anuncia-item" lines="none">
+  <ion-textarea class="font" placeholder="Título" type="text"></ion-textarea>
 </ion-item><br>
 
-<ion-item class="anuncia-item ion-text-center">
-  <ion-input class="font" placeholder="Subtítulo" type="text"></ion-input>
+<ion-item class="anuncia-item" lines="none">
+  <ion-textarea class="font" placeholder="Subtítulo" type="text"></ion-textarea>
 </ion-item>
-<br>
+
 <h5 class="pub">Publicado em 11/11/2020</h5>
 <hr class="linha">
+<ion-item lines="none" >
+  <ion-textarea class="desc" placeholder="Descrição"></ion-textarea>
+</ion-item>
+<br> 
+<ion-item class="anuncia-item " lines="none">
+  <ion-textarea class="font" placeholder="Etiqueta" type="text"></ion-textarea>
+</ion-item><br>
+
+  <ion-button class="anunciar" color="secondary" shape="round"><b>ANUNCIAR</b></ion-button>
+<br>
+
 </ion-content>
 
