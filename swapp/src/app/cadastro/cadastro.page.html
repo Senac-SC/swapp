@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <img class="logo" src="../../assets/img/swapplogo.png">
+          </ion-col>
+        </ion-row>
+        
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary"><br><br>
+  <form class="content-user">
+  <ion-item class="cadastro-item ion-text-center">
+    <ion-input class="font" placeholder="Nome Completo" type="text" #nome required></ion-input>
+  </ion-item>
+  <br>
+  <ion-item class="cadastro-item ion-text-center">
+    <ion-input class="font" placeholder="Nome de Usuário" type="text" #usuario required></ion-input>
+  </ion-item>
+  <br>
+  <ion-item class="cadastro-item ion-text-center">
+    <ion-input class="font" placeholder="Data de Nascimento" type="date" #datanasc required></ion-input>
+  </ion-item>
+  <br>
+  <ion-item class="cadastro-item ion-text-center">
+    <ion-input class="font" placeholder="Telefone / Celular" type="text" #telefone required></ion-input>
+  </ion-item>
+  <br>
+  <ion-item class="cadastro-item ion-text-center">
+    <ion-input class="font" placeholder="Cpf" type="text" #cpf required></ion-input>
+  </ion-item>
+  <br>
+  <ion-item class="cadastro-item ion-text-center">
+    <ion-input class="font" placeholder="CEP" type="text" #cep required></ion-input>
+  </ion-item>
+  <br>
+  <ion-item class="cadastro-item ion-text-center">
+    <ion-input class="font" placeholder="E-mail" type="text" #email required></ion-input>
+  </ion-item>
+  <br>
+  <ion-item class="cadastro-item ion-text-center">
+    <ion-input class="font" placeholder="Senha" type="password" #senha required></ion-input>
+  </ion-item>
+  <br>
+  <ion-button class="cadastro-button" color="secondary" shape="round" (click)="addUser(nome, usuario, datanasc, telefone, cpf, cep, email, senha)"><b>Cadastrar</b></ion-button>
+</form>
+  <br><br>
+</ion-content>
