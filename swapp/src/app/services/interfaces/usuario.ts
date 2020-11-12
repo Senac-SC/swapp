@@ -1,5 +1,9 @@
 export interface Usuario {
+    nome: string,
+    usuario:string,
+    datanasc: string,
+    telefone:string,
     cpf: string,
     cep: string,
-    datanasc: string
+    email:string
 }

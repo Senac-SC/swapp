@@ -56,9 +56,13 @@ export class AuthService {
   createUser(uid, usuario){
     const userRef: AngularFirestoreDocument<any> = this.ngFirestore.doc('Usuarios/' + uid);
     const userData: Usuario = {
+      nome: usuario.nome,
+      usuario: usuario.usuario,
+      datanasc: usuario.datanasc,
+      telefone: usuario.telefone,
       cpf: usuario.cpf,
       cep: usuario.cep,
-      datanasc: usuario.datanasc
+      email: usuario.email
     }
 
 

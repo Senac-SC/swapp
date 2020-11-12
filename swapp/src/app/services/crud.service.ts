@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
-
-
-//import { Docinho } from './interfaces/docinho';
+import { Usuario } from './interfaces/usuario';
 
 
 @Injectable({
@@ -13,41 +11,44 @@ export class CrudService {
 
   constructor(public ngStore: AngularFirestore) { }
 
-/*
-  getDocinhosList() {
-    const docinhoRef = this.ngStore.collection("Docinhos");
-    return docinhoRef;
+  getUsuarioList() {
+    const usuarioRef = this.ngStore.collection("Usuario");
+    return usuarioRef;
   }
 
 
-  setDocinho(docinho){
-    const docinhoData: Docinho = {
-      nome: docinho.nome,
-      sabor: docinho.sabor,
-      peso: docinho.peso,
-      tipo: docinho.tipo
+  setUsuario(usuario){
+    const usuarioData: Usuario = {
+      nome: usuario.nome,
+      usuario: usuario.usuario,
+      datanasc: usuario.datanasc,
+      telefone: usuario.telefone,
+      cpf: usuario.cpf,
+      cep: usuario.cep,
+      email: usuario.email
     }
-    return this.ngStore.collection("Docinhos").add(docinhoData);
+    return this.ngStore.collection("Usuario").add(usuarioData);
   }
 
 
-  updateDocinho(uid, docinho){
-    const docinhoData: Docinho = {
-      nome: docinho.nome,
-      sabor: docinho.sabor,
-      peso: docinho.peso,
-      tipo: docinho.tipo
+  updateUsuario(uid, usuario){
+    const usuarioData: Usuario = {
+      nome: usuario.nome,
+      usuario: usuario.usuario,
+      datanasc: usuario.datanasc,
+      telefone: usuario.telefone,
+      cpf: usuario.cpf,
+      cep: usuario.cep,
+      email: usuario.email
     }
-    const docinhoRef: AngularFirestoreDocument<any> = this.ngStore.doc("Docinhos/"+uid);
-    return docinhoRef.update(docinhoData);
+    const usuarioRef: AngularFirestoreDocument<any> = this.ngStore.doc("Usuario/"+uid);
+    return usuarioRef.update(usuarioData);
   }
 
 
-  removeDocinho(uid){
-    const docinhoRef: AngularFirestoreDocument<any> = this.ngStore.doc("Docinhos/"+uid);
-    return docinhoRef.delete();
+  removeUsuario(uid){
+    const usuarioRef: AngularFirestoreDocument<any> = this.ngStore.doc("Usuario/"+uid);
+    return usuarioRef.delete();
   }
-*/
-
 }
 
