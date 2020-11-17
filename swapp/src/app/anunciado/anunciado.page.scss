@@ -1,0 +1,43 @@
+.icone-heart{
+    width: 28px;
+    height: 28px;
+    margin-left: 90px;
+    margin-top: 5px;
+}
+
+.icone-share{
+    width: 28px;
+    height: 28px;
+    margin-left: 25px;
+}
+
+.texto{
+    margin-top: 10px;
+}
+
+.produto{
+    border: 2px solid white;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fundo{
+    background-color: #65499c;
+    color: white;
+}
+
+hr{
+    background-color: white;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.contato{
+    width: 310px;
+}
+
+ion-card-title, ion-card-subtitle{
+    color: white;
+}

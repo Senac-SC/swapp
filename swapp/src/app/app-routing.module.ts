@@ -45,6 +45,10 @@ const routes: Routes = [
   {
     path: 'anunciar',
     loadChildren: () => import('./anunciar/anunciar.module').then( m => m.AnunciarPageModule)
+  },
+  {
+    path: 'anunciado',
+    loadChildren: () => import('./anunciado/anunciado.module').then( m => m.AnunciadoPageModule)
   }
 
 
