@@ -29,11 +29,6 @@ export class AppComponent {
       icon: 'chatbubbles'
     },
     {
-      title: 'Cadastro',
-      url: '/cadastro',
-      icon: 'add'
-    },
-    {
       title: 'Anunciar Produto',
       url: '/anunciar',
       icon: 'add'

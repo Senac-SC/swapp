@@ -7,7 +7,7 @@
         </ion-toolbar>
       </ion-header>
       <ion-content>
-        <ion-list>
+        <ion-list><br>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
             <ion-item [routerDirection]="'root'" [routerLink]="[p.url]" lines="none">
               <ion-icon color="light" slot="start" [name]="p.icon"></ion-icon>
@@ -21,7 +21,9 @@
           <ion-menu-toggle auto-hide="false">
             <ion-item lines="none" (click)="logout()" routerDirection="root" detail="false">
               <ion-icon slot="start" [ios]="'log-out-outline'" [md]="'log-out-sharp'"></ion-icon>
-              <ion-label>Sair</ion-label>
+              <ion-button class="botao-sair" color="warning">
+              <b>SAIR</b>
+            </ion-button>
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
