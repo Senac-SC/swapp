@@ -15,6 +15,7 @@ export class AuthService {
     this.ngFireAuth.authState.subscribe( user => {
       if(user) {
         localStorage.setItem("usuario",JSON.stringify(user));
+        console.log(user)
         this.router.navigate(["inicio"]);
       }
       else{
@@ -46,6 +47,9 @@ export class AuthService {
     return this.ngFireAuth.createUserWithEmailAndPassword(email, password).then((result) => {
 
 
+      result.user.updateProfile({
+        displayName: usuario.nome
+      })
       this.createUser(result.user.uid, usuario);
 
 

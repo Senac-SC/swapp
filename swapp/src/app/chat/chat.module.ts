@@ -8,13 +8,25 @@ import { ChatPageRoutingModule } from './chat-routing.module';
 
 import { ChatPage } from './chat.page';
 
+import {AutosizeModule} from 'ngx-autosize';
+
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ChatPageRoutingModule
+    ChatPageRoutingModule,
+    RouterModule.forChild([
+      {
+        path: '',
+        component: ChatPage
+      }
+    ]),
+    AutosizeModule
   ],
   declarations: [ChatPage]
 })
+
 export class ChatPageModule {}

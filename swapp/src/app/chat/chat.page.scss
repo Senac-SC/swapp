@@ -1,63 +1,40 @@
 .mensagem{
- border-radius: 30px;
- width: 130px;
- background-color:#D8D8D8;
-}
-
-.icon-button{
-    margin: 0 0 0 10px;
-}
-ion-fab-button{
-    width: 45px;
-    height: 45px;
-    
-}
-
-.emo{
-    margin: 20px 0 0 15px;
-}
-
-.txt{ 
+    padding: 10px;
     border-radius: 10px;
-    background-color: #9c7ecf8a;
-    margin: 30px 15px 0 100px;
-    font-size: 12pt;
-    color: #47525E;
+    margin-bottom: 4px;
+    white-space: pre-wrap;
 }
-.txte{
 
-    border-radius: 10px;
-    background-color: #9c7ecf8a;
-    margin: 10px 15px 0 70px;
-    font-size: 12pt;
-    color: #47525E;
-   
+.outra-mensagem{
+    background: var(--ion-color-tertiary);
+    color: #fff;
+
 }
-.dot{
-border-radius: 10px;
-background-color: #9c7ecf8a;
-margin: 10px 5px 0px 80px;
-font-size: 12pt;
-color: #47525E;
-width: 10px;
-height: 10px;
+
+.minha-mensagem{
+    background: var(--ion-color-secondary);
+    color: #fff;
 }
-.dot1{
+
+.time{
+    color: #dfdfdd;
+    float: right;
+    font-size: small;
+
+}
+
+.mensagem-entrada{
+    width: 100%;
+    border: 1px solid var(--ion-color-medium);
     border-radius: 10px;
-    background-color: #9c7ecf8a;
-    margin: 10px 5px 0px 0px;
-    font-size: 12pt;
-    color: #47525E;
-    width: 10px;
-    height: 10px;
-    }
-    .dot2{
-        border-radius: 10px;
-        background-color: #9c7ecf8a;
-       margin: 10px 5px 0px 0px;
-        font-size: 12pt;
-        color: #47525E;
-        width: 10px;
-        height: 10px;
-        }
-            
+    background: #fff;
+    resize: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.msg-btn{
+ --padding-start: 0.5em;
+ --padding-end: 1em; 
+}
+
