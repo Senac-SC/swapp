@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, SystemJsNgModuleLoaderConfig } from '@angular/core';
 
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
@@ -11,7 +11,9 @@ import { Router } from '@angular/router';
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss']
 })
+
 export class AppComponent {
+userId
   public appPages = [
     {
       title: 'Home',
@@ -20,12 +22,12 @@ export class AppComponent {
     },
     {
       title: 'Perfil',
-      url: '/perfil',
+      url: '/meuperfil',
       icon: 'person'
     },
     {
-      title: 'Chat',
-      url: '/chat',
+      title: 'Conversas',
+      url: '/converas',
       icon: 'chatbubbles'
     },
     {
@@ -49,10 +51,12 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      this.userId= JSON.parse(localStorage.getItem("usuario")).displayName
     });
   }
 
   logout(){
+    this.userId= null;
     this.authService.SignOut();
     this.router.navigate(["home"]);
   }

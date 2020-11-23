@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ChatPageRoutingModule } from './chat-routing.module';
+import { OtchatPageRoutingModule } from './otchat-routing.module';
 
-import { ChatPage } from './chat.page';
+import { OtchatPage } from './otchat.page';
 
 import {AutosizeModule} from 'ngx-autosize';
 
@@ -17,16 +17,16 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     FormsModule,
     IonicModule,
-    ChatPageRoutingModule,
+    OtchatPageRoutingModule,
     RouterModule.forChild([
       {
         path: '',
-        component: ChatPage
+        component: OtchatPage
       }
     ]),
     AutosizeModule
   ],
-  declarations: [ChatPage]
+  declarations: [OtchatPage]
 })
 
-export class ChatPageModule {}
+export class OtchatPageModule {}

@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light">Suas Conversas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+    <ion-content fullscreen>
+      <ion-list>
+        <ion-list-header class="title">
+         <b>Conversas Recentes</b>
+        </ion-list-header>
+
+        <ion-item routerLink="../chat">
+          <ion-avatar slot="start">
+            <img src="assets/img/emo.jpg">
+          </ion-avatar>
+          <ion-label>
+            <h2><b>Rafael Monteiro</b></h2>
+            <h3><b>Sou emo</b></h3>
+            <p>Aquele violão brabo!</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-list-header class="title">
+         <b> Online</b>
+        </ion-list-header>
+
+        <ion-item routerLink="../otchat">
+          <ion-avatar slot="start">
+            <img src="assets/img/flocos.png">
+          </ion-avatar>
+          <ion-label>
+            <h2><b>Flocos</b></h2>
+            <h3><b>Natsuki is my life</b></h3>
+          </ion-label>
+        </ion-item>
+
+        <ion-item routerLink="../otchat" >
+          <ion-avatar slot="start">
+            <img src="assets/img/carlos1.png">
+          </ion-avatar>
+          <ion-label>
+            <h2><b>Carlos</b></h2>
+            <h3><b>Tô explodindo minha cabeça</b></h3>
+          </ion-label>
+        </ion-item>
+
+        <ion-item routerLink="../otchat">
+          <ion-avatar slot="start">
+            <img src="assets/img/rafaela.jpg">
+          </ion-avatar>
+          <ion-label>
+            <h2><b>Rafaela</b></h2>
+            <h3><b>Linda, perfeita e inteligente</b></h3>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>

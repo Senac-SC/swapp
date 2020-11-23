@@ -36,9 +36,6 @@ const routes: Routes = [
     loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
   },
   {
-    path: 'chat',
-    loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
-  },  {
     path: 'cadastro',
     loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
@@ -49,7 +46,20 @@ const routes: Routes = [
   {
     path: 'anunciado',
     loadChildren: () => import('./anunciado/anunciado.module').then( m => m.AnunciadoPageModule)
+  },
+  {
+    path: 'converas',
+    loadChildren: () => import('./converas/converas.module').then( m => m.ConverasPageModule)
+  },  {
+    path: 'meuperfil',
+    loadChildren: () => import('./meuperfil/meuperfil.module').then( m => m.MeuperfilPageModule)
+  },
+  {
+    path: 'otchat',
+    loadChildren: () => import('./otchat/otchat.module').then( m => m.OtchatPageModule)
   }
+
+
 
 
 
