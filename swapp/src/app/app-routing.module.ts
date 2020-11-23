@@ -50,7 +50,8 @@ const routes: Routes = [
   {
     path: 'converas',
     loadChildren: () => import('./converas/converas.module').then( m => m.ConverasPageModule)
-  },  {
+  },
+  {
     path: 'meuperfil',
     loadChildren: () => import('./meuperfil/meuperfil.module').then( m => m.MeuperfilPageModule)
   },
@@ -58,9 +59,6 @@ const routes: Routes = [
     path: 'otchat',
     loadChildren: () => import('./otchat/otchat.module').then( m => m.OtchatPageModule)
   }
-
-
-
 
 
 ];

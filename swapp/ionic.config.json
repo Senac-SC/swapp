@@ -1,5 +1,8 @@
 {
   "name": "swapp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }

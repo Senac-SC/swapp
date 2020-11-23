@@ -7,37 +7,48 @@
   </ion-toolbar>
 </ion-header>
 
-
   <ion-content>
-
-    
-
 <div class="titu">
 <h5><b>Adicione uma imagem. <br> (Tamanho recomendado 500X500)</b></h5>
-<ion-button class="bao">
+
+<ion-grid>
+  <ion-row>
+  <ion-col class="text-center" size="12" 
+    *ngFor="let photo of photoService.photos; index as position">
+      <ion-img [src]="photo.webviewPath" class="imagemm"></ion-img>
+  </ion-col>
+  </ion-row>
+</ion-grid>
+
+<div *ngIf="show">
+<ion-button (click)="addPhotoToGallery()" class="bao">
       <ion-icon class="icu" name="camera"></ion-icon>
     </ion-button>
+  </div> 
+
 </div><br>
-<ion-item class="anuncia-item" lines="none">
-  <ion-textarea class="font" placeholder="Título" type="text"></ion-textarea>
-</ion-item><br>
+<form class="content-prod">
+  <ion-item class="anuncia-item" lines="none">
+    <ion-input class="font" placeholder="Título" type="text" #titulo required></ion-input>
+  </ion-item><br>
 
-<ion-item class="anuncia-item" lines="none">
-  <ion-textarea class="font" placeholder="Subtítulo" type="text"></ion-textarea>
-</ion-item>
+  <ion-item class="anuncia-item" lines="none">
+    <ion-input class="font" placeholder="Subtítulo" type="text" #subtitulo required></ion-input>
+  </ion-item>
 
-<h5 class="pub">Publicado em 11/11/2020</h5>
-<hr class="linha">
-<ion-item lines="none" >
-  <ion-textarea class="desc" placeholder="Descrição"></ion-textarea>
-</ion-item>
-<br> 
-<ion-item class="anuncia-item " lines="none">
-  <ion-textarea class="font" placeholder="Etiqueta" type="text"></ion-textarea>
-</ion-item><br>
+  <h5 class="pub">Publicado em 11/11/2020</h5>
+  <hr class="linha">
+  <ion-item lines="none" >
+    <ion-input class="desc" placeholder="Descrição" #descricao required></ion-input>
+  </ion-item>
+  <br> 
+  <ion-item class="anuncia-item " lines="none">
+    <ion-input class="font" placeholder="Etiqueta" type="text" #etiqueta required></ion-input>
+  </ion-item>
+</form><br>
 
-  <ion-button class="anunciar" color="secondary" shape="round"><b>ANUNCIAR</b></ion-button>
-<br>
+  <ion-button class="anunciar" color="secondary" shape="round" (click)="addProd(titulo, subtitulo, descricao, etiqueta)"><b>ANUNCIAR</b></ion-button>
+<br><br>
 
 </ion-content>
 
