@@ -22,7 +22,7 @@ userId
     },
     {
       title: 'Perfil',
-      url: '/perfil',
+      url: '/meuperfil',
       icon: 'person'
     },
     {
